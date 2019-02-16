@@ -17,8 +17,8 @@ mongoDB.once('open', ()=> {
   console.log("Connected to MongoDB...");
 });*/
 
-let indexRouter = require('./server/routes/index');
-let contactRouter = require('./server/routes/contact');
+let indexRouter = require('./routes/index');
+let contactRouter = require('./routes/contact');
 
 
 let app = express();
