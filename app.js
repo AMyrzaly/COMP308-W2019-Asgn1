@@ -33,7 +33,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
-
+app.use(express.static(path.join(__dirname, '../models')));
 app.use('/', indexRouter);
 app.use('/contact-list', contactRouter);
 
